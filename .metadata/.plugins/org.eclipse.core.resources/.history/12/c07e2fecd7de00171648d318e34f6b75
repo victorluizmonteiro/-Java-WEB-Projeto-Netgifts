@@ -1,0 +1,9 @@
+package com.fiap.service;
+
+import com.fiap.netgifs.repository.UsuarioRepository;
+
+public class UsuarioService {
+	
+	private UsuarioRepository usuarioDao;
+
+}

@@ -1,0 +1,9 @@
+package com.fiap.netgifs.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.fiap.netgifs.entity.Gif;
+
+public interface GifRepository extends JpaRepository<Gif, Short> {
+
+}

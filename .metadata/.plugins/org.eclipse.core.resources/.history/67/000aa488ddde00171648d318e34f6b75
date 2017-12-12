@@ -1,0 +1,29 @@
+package com.fiap.netgifs;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class NetgifsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(NetgifsApplication.class, args);
+		
+		
+	}
+	
+	@Bean
+	public LocaleResolver localResolver(){
+		return new FixedLocaleResolver(new Locale("pt","BR"));
+	}
+	
+	//Configura para se alguem digitar / na url , redireciona para a pagina de listagem
+	
+	@Configuration
+	public static class MvcConfig extends WebMvcConfigurerAdapter{
+		@Override
+		public void addViewControllers(ViewControllerRegistry registry) {
+			registry.addRedirectViewController("/", "/titulo");
+		}
+	}
+}

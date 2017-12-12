@@ -1,0 +1,30 @@
+package com.fiap.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.fiap.netgifs.entity.Categoria;
+import com.fiap.netgifs.repository.CategoriaRepository;
+
+@Service
+public class CategoriaService {
+	@Autowired
+	private CategoriaRepository categoriaDao;
+	
+	
+	public void salvar(Categoria categoria) throws Exception{
+		try{
+			categoriaDao.save(categoria);
+		}catch(Exception e){
+			e.printStackTrace();
+			throw new Exception("Categoria não cadastrada !");
+		}
+	}
+	
+	public List<Categoria> listar(){
+		return categoriaDao.findAll();
+	}
+
+}

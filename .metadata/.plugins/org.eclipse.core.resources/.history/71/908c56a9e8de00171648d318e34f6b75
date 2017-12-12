@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns= "http://w3.org/1999/xhtml"
+		xmlns:th= "http://www.thymeleaf.org"
+		xmlns:layout= "http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"/>
+	<!-- meta`s responsáveis por deixar a tela responsiva -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+<title>Insert Cobrança</title> <!--  o @ do thymeleaf resolve o problema do context path externo no tomcat -->
+<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}"/>
+
+</head>
+<body>
+	
+	
+ <!-- Cria uma parte na tela para inserir  conteudos -->
+ <section layout:fragment="conteudo"></section>
+ 
+
+<script th:src="@{/js/bootstrap.min.js}"></script>
+
+
+ </body>
+ </html>

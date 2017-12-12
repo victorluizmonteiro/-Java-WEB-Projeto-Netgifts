@@ -1,0 +1,12 @@
+package com.fiap.netgifs.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_CATEGORIAS")
+public class Categoria {
+
+	private int id;
+	private String descricao;
+}

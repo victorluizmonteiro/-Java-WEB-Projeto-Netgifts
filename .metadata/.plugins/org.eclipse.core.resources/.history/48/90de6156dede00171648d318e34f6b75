@@ -1,0 +1,10 @@
+package com.fiap.netgifs.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class LoginController {
+	
+	private static final  String LOGIN_VIEW = "LoginView";
+
+}

@@ -1,0 +1,9 @@
+package com.fiap.netgifs.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.fiap.netgifs.entity.Usuario;
+
+public interface UsuarioRepository  extends JpaRepository<Usuario, Short>{
+
+}

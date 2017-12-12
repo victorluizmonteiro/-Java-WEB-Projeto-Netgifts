@@ -1,0 +1,9 @@
+INDEX VERSION 1.3+/Users/Monteiro/NetgifsProject/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1382772504.index
+1165734932.index
+3519714175.index
+1932322427.index
+3311788100.index
+3221066727.index
+3520708539.index
+3616117136.index

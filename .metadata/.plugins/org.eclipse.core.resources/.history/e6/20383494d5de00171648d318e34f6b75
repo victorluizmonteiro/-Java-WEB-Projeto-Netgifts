@@ -1,0 +1,5 @@
+package com.fiap.netgifs.entity;
+
+public class Gif {
+
+}

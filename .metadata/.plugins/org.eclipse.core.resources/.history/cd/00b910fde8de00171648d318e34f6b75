@@ -1,0 +1,9 @@
+<html xmlns="http://w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout= "http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator ="LayoutPadrao"> <!-- decorator define qual layout vai decorar ou implementar essa tela -->
+
+<body>
+
+	
+</html>
